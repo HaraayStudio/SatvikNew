@@ -1,0 +1,323 @@
+.checkoutPage {
+    display: flex;
+    max-width: 100%;
+    background: #f9f9f9;
+    margin: 0 auto;
+    padding: 100px;
+    gap: 40px;
+    padding-top: 50px;
+  
+    .leftSection {
+      flex: 1;
+     
+      padding: 20px 80px;
+      border-radius: 8px;
+  
+      h2 {
+        color: var(--Brand-Colour-Input-Field, #545555);
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Satoshi;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%; /* 27px */
+      }
+    }
+  
+    .checkoutForm {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width:500px ;
+      margin: auto;
+    }
+ 
+    .nameRow {
+      display: flex;
+      gap: 15px;
+  
+      .inputGroup {
+        flex: 1;
+        position: relative;
+      }
+    }
+  
+    .addressRow {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+  
+      .inputGroup {
+        flex: 1;
+        position: relative;
+      }
+ 
+      .stateSelect {
+    flex: 1;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-bottom: 8px;  
+      display: flex;
+      padding: 3px 3px 3px 20px;
+      justify-content: flex-end;
+      align-items: center;
+      
+    //    border-radius: 30px;
+      border: 0.5px solid var(--Brand-Colour-Input-Field, #54555556);
+      color: var(--Brand-Colour-Input-Field, #545555);
+text-align: center;
+font-family: Satoshi;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+
+text-align: left;
+  
+      }
+    }
+  
+    input, select {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-bottom: 8px;  width: 100%;
+      display: flex;
+      padding: 3px 3px 3px 10px;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 114px;
+    //    border-radius: 30px;
+      border: 0.5px solid var(--Brand-Colour-Input-Field, #54555556);
+      color: var(--Brand-Colour-Input-Field, #545555);
+text-align: center;
+font-family: Satoshi;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
+text-align: left;
+  
+      &:focus {
+        outline: 2px solid #007bff;
+        border-color: #007bff;
+      }
+    }
+    
+    .errorInput {
+      border-color: #dc3545;
+    }
+  
+    .errorText {
+      color: #dc3545;
+      font-size: 12px;
+    //   position: absolute;
+      bottom: -8px;
+      left: 0;
+    }
+  
+    .serviceableText {
+      color: green;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  
+    .unserviceableText {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+  
+    .paymentSection {
+      margin-top: 15px;
+  
+      h3 {
+        margin-bottom: 10px;
+      }
+  
+      .paymentOptions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      .radioLabel {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        cursor: pointer;
+  
+        input {
+          width: auto;
+          margin-right: 10px;
+        }
+  
+        .subtext {
+          color: #666;
+          font-size: 12px;
+          margin-left: auto;
+        }
+      }
+    }
+  
+    .checkoutButton { margin-left: auto;
+        display: flex;
+        width: 180px;
+        height: 40px;
+        padding: 10px 0px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 30px; border: none; color: #FFF;
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Satoshi;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; /* 130% */
+        background: var(--Brand-Colour-1st-Colour, #226160);
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  
+    .rightSection {
+      flex: 0.8;
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      height: fit-content;
+  
+      h3 {
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #333;
+      }
+    }
+  
+    .cartSummary {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+  
+    .cartItem {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 15px;
+  
+      .cartImage {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+        border-radius: 4px;
+      }
+  
+      .itemDetails {
+        flex: 1;
+  
+        h4 {
+          margin-bottom: 5px;
+          font-size: 16px;
+        }
+  
+        p {
+          color: #666;
+          font-size: 14px;
+        }
+      }
+    }
+  
+    .orderTotal {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      border-top: 1px solid #e0e0e0;
+      padding-top: 15px;
+    }
+  
+    .totalRow {
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+  
+      .grandTotal {
+        font-weight: bold;
+        color: #007bff;
+      }
+    }
+  }
+
+  .addresstype{
+    width: 100%;
+    display: flex; gap: 20px;
+    justify-content: start;
+    div{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 10px;
+       input:focus{
+        outline: none;
+       }
+        input[type="radio"] {
+            appearance: none; /* Removes default radio button */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+          width: 5px !important;
+            height: 5px !important; 
+            border: 2px solid #0e612a; /* Outer circle */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 8px;
+            margin: auto;
+        }
+        
+        input[type="radio"]::before {
+            content: "";
+            width: 8px; /* Inner dot size */
+            height: 8px;
+            background-color: #265C5C; /* Inner dot color */
+            border-radius: 50%;
+            position: absolute;
+            opacity: 0;
+            transition: opacity 0.2s ease-in-out;
+        }
+        
+        input[type="radio"]:checked::before {
+            opacity: 1;
+        }
+        
+        label{color: var(--Brand-Colour-Heading, #0A0C0C);
+            font-family: Satoshi;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%; /* 30px */}
+    }
+  }
+
+  .labelheadtxt{
+   
+    
+    color: var(--Brand-Colour-Heading, #0A0C0C);
+
+font-family: Satoshi;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+// line-height: 150%; /* 27px */
+
+  }

@@ -1,0 +1,151 @@
+.productsPage {
+    width: 100%;
+   
+  background-color: rgba(240, 255, 245, 0.514); 
+}
+
+.pageContainer {
+    width: 100%;
+    padding: 0px;
+
+    .headerSection {
+        width: 100%;
+
+        .HeroBanner {
+            width: 100%;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .headerText {
+            color: var(--Brand-Colour-Heading, #226160);
+            font-feature-settings: 'liga'off, 'clig'off;
+            font-family: Zodiak;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 540;
+            line-height: 150%;
+            /* 96px */
+            text-align: center;
+            margin: 50px 0 0 0;
+        }
+    }
+
+    .productsContainer {
+
+        padding: 50px 70px 40px 70px;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+
+        .product {
+            width: 100%;
+            height: auto;
+            background-color: white;
+            .productCard {
+                background-color: white;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+
+                .variantButtons {
+
+                    display: flex;
+                    width: 60%;
+                    gap: 10px;
+                    margin: 0;
+                    padding: 0 10px;
+                    margin-left: 10px;
+
+                    button {
+                        width: 100%;
+                        padding: 7px;
+                        background-color: white;
+
+                        border: none;
+                        cursor: pointer;
+                        color: var(--Brand-Colour-Sub-Heading, #333434);
+                        font-family: Satoshi-Regular;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+
+                        :focus,
+                        :active,
+                        :visited {
+                            outline: none;
+                        }
+                    }
+
+                    .activeVariantButton {
+                        background-color: #166451f5;
+                        border-radius: 20px;
+                        color: white;
+                    }
+                }
+
+                .productDetails {
+                    background-color: rgb(255, 255, 255);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    // align-items: flex-start;
+                    .productName {
+                        color: var(--Brand-Colour-Sub-Heading, #333434);
+                        font-feature-settings: 'liga'off, 'clig'off;
+                        font-family: Satoshi;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 150%;
+                        margin: 5px 0 7px 0;
+                        background-color: white;
+                        padding-left: 10%;
+                    }
+
+                    .priceAmount {
+                        background-color: white;
+                        width: fit-content;
+                        text-wrap: nowrap;
+                        text-align: center;
+                        margin: 0 auto;
+                        font-family: Satoshi;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;  color: var(--Brand-Colour-Sub-Heading, #333434);
+                    }
+                }
+
+                .buyButton {
+                    display: flex;
+                    width: 90%;
+                    margin: 0 auto;
+                    padding: 7.492px 0px 7.508px 0px;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 31.754px;
+                    background: var(--Brand-Colour-1st-Colour, #226160);
+                    color: #FFF;
+                    font-feature-settings: 'liga'off, 'clig'off;
+                    font-family: Satoshi;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                    /* 27px */
+                    border: none;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+
